@@ -26,7 +26,7 @@
 
 # Morse Code <a name="about-project"></a>
 
-**Morse Code** is a Ruby code that decodes morse-coded messages using a few simple steps, it is done as part of our first Ruby projects.
+**Morse Code** is a Ruby code that decodes morse-coded messages using a few simple steps. It is done as part of our first Ruby projects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
