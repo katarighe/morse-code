@@ -13,7 +13,7 @@ end
 character = decode_char('.-')
 puts character
 
-# Decode a word
+# Decode a word called MY NAME
 def decorde_word(word)
   word.split.map { |character| decode_char(character) }.join
 end
@@ -23,3 +23,5 @@ end
 def decode_message(message)
     message.split("   ").map { |word| decode_char(word)}.join(" ")
 end
+
+# Argument sent 
