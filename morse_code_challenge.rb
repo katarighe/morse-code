@@ -24,7 +24,7 @@ puts word
 
 # Decode a whole message
 def decode_message(message)
-  message.split('   ').map { |word| decode_char(word) }.join(' ')
+  message.split('   ').map { |word| decode_word(word) }.join(' ')
 end
 
 # Decode the message from the old bottle called as MY NAME
