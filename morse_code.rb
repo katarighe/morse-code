@@ -1,4 +1,4 @@
-# Decode a Morse code character
+# Create a method to decode a Morse code character
 def decode_char(char)
   morse_alphabet = {
     '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
@@ -18,15 +18,15 @@ def decode_word(word)
   word.split.map { |char| decode_char(char) }.join
 end
 
-# Argument sent MY NAME
+# Decode the entire word
 word = decode_word('-- -.--   -. .- -- .')
 puts word
 
-# Decode a whole message
+# Decode a message
 def decode_message(message)
   message.split('   ').map { |word| decode_word(word) }.join(' ')
 end
 
-# Decode the message from the old bottle called as MY NAME
+# Decode the entire message
 message = decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 puts message
