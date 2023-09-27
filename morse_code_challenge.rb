@@ -20,3 +20,6 @@ end
 
 # Decode a whole message
 
+def decode_message(message)
+    message.split.map { |message| decode_char(message)}.join
+end
