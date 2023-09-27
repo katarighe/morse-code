@@ -17,3 +17,5 @@ puts character
 def decorde_word(word)
   word.split.map { |character| decode_char(character) }.join
 end
+
+# Decode a whole message
