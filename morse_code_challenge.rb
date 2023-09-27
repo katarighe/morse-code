@@ -1,12 +1,12 @@
 # Decode a Morse code character
-def decode_char(character)
+def decode_char(char)
   morse_alphabet = {
     '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E', '..-.' => 'F', '--.' => 'G', '....' => 'H',
     '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L', '--' => 'M', '-.' => 'N', '---' => 'O', '.--.' => 'P',
     '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T', '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X',
     '-.--' => 'Y', '--..' => 'Z'
   }
-  morse_alphabet[character]
+  morse_alphabet[char]
 end
 
 # Decode the Morse code character
@@ -14,8 +14,8 @@ character = decode_char('.-')
 puts character
 
 # Decode a word
-def decorde_word(word)
-  word.split.map { |character| decode_char(character) }.join
+def decode_word(word)
+  word.split.map { |char| decode_char(char) }.join
 end
 
 # Argument sent MY NAME
