@@ -9,7 +9,14 @@ def decode_char(character)
   morse_alphabet[character]
 end
 
-# Decode the character A
+# Decode the Morse code character
 character = decode_char('.-')
 puts character
+
+# Decode a word
+def decorde_word(word)
+  word.split.map { |character| decode_char(character) }.join
+end
+
+# Decode a whole message
 
