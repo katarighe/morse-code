@@ -8,3 +8,5 @@ def decode_char(character)
   }
   morse_alphabet[character]
 end
+
+# Decode the character A
