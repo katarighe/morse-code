@@ -21,5 +21,5 @@ end
 # Decode a whole message
 
 def decode_message(message)
-    message.split.map { |message| decode_char(message)}.join
+    message.split("   ").map { |word| decode_char(word)}.join(" ")
 end
