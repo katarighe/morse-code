@@ -12,3 +12,4 @@ end
 # Decode the character A
 character = decode_char('.-')
 puts character
+
